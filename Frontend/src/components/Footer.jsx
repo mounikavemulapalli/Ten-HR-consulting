@@ -28,8 +28,9 @@ const Footer = () => {
           <div className='footer_links1'>
             <ul>
               <h3>Company</h3>
-              <Link to='/FAQ'>Frequently Asked Questions</Link>
-
+              <li>
+                <a href='/FAQ'>Frequently Asked Questions</a>
+              </li>
               <li>
                 <a href='/aboutUs'>About TEN HR Consulting</a>
               </li>
@@ -46,16 +47,17 @@ const Footer = () => {
             <ul>
               <h3>Services</h3>
               <li>
-                <a
-                  href='/services/peo&eor'
-                  onClick={(event) => {
-                    event.preventDefault();
-                    handleClick("PEO & EoR");
-                    window.location.href = "/services/peo&eor"; // Manually set the location if needed
-                  }}
-                >
-                  PEO & EoR
-                </a>
+                <li>
+                  <a
+                    href='/services/recruitment'
+                    onClick={(event) => {
+                      event.preventDefault();
+                      handleClick("Recruitment");
+                    }}
+                  >
+                    Recruitment
+                  </a>
+                </li>
               </li>
               <li>
                 <a
