@@ -38,7 +38,7 @@ const Apply = () => {
     const formData = new FormData(e.target); // Collect the form data
 
     try {
-      const response = await fetch("http://localhost:3000/upload", {
+      const response = await fetch("https://ten-hr-consulting.onrender.com/upload", {
         method: "POST",
         body: formData,
       });
