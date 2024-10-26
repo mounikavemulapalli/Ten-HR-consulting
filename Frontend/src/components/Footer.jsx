@@ -3,6 +3,7 @@ import "./Footer.css";
 import "./PrivacyPolicy";
 import "./FAQ/FAQSection";
 import "./FAQ/FAQItem";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const handleClick = (serviceName) => {
@@ -27,9 +28,8 @@ const Footer = () => {
           <div className='footer_links1'>
             <ul>
               <h3>Company</h3>
-              <li>
-                <a href='/FAQ'>Frequently Asked Questions</a>
-              </li>
+              <Link to='/FAQ'>Frequently Asked Questions</Link>
+
               <li>
                 <a href='/aboutUs'>About TEN HR Consulting</a>
               </li>
