@@ -1,0 +1,172 @@
+
+
+.job-list-details {
+  padding: 8%;
+  background: #ebf0f5;
+  
+}
+
+.job-list-button{
+  border: 1px solid grey;
+  display: flex;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  justify-content: center;
+  background-color: rgb(221, 220, 220);
+}
+
+.job-list-button svg{
+  margin: 3px;
+  margin-left: 0;
+}
+
+.job-heading-job-list{
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(34, 34, 124);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.job-name, .job-degree, .job-location, .job-salary{
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.development{
+  display: flex;
+  width: 100%;
+}
+
+.Job-headng-description, .Job-headng-requirements{
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(40, 40, 136);
+}
+
+.job-information-div{
+  padding: 50px;
+  display: flex;
+}
+
+.custom-list, .custom-ol-point{
+  padding-top: 20px;
+  font-size: 1rem;
+}
+
+.custom-list li, .custom-ol-point li{
+  list-style: disc;
+  color: rgb(77, 75, 75);
+  margin-left: 30px;
+}
+
+.application-form-container {
+  padding: 40px;
+  width: 80vw;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  gap:10px;
+  height: 80vh;
+  margin-top: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
+
+}
+
+.application-form-container h2{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: rgb(40, 40, 136);
+
+}
+
+.frm-r1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.frm-grp1 {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #4e4d4d;
+}
+
+.application-form-container input, .application-form-container select{
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #f9a825;
+  border: none;
+  color: rgb(40, 40, 136);
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #f57c00;
+}
+
+/* Existing styles */
+
+.job-information-div {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px){
+  .application-form-container {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .job-information-div {
+    flex-direction: column; 
+  }
+
+  .application-form-container {
+    width: 90vw; 
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 20%;
+    height: auto;
+  }
+  
+  .frm-r1 {
+    flex-direction: column; 
+  }
+
+  .frm-grp1 {
+    width: 100%; 
+  }
+
+  .submit-btn {
+    width: 100%; 
+  }
+}
